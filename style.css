@@ -1,0 +1,70 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #F0F8FF;
+}
+
+/* Header */
+.header {
+    position: relative;
+}
+.header .icon-links a {
+    margin: 0 5px;
+    color: #F0F8FF;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* About Section */
+.about .profile-img {
+    background-image: url('your-profile-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Services Section */
+.services .row div {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+/* Projects Section */
+.projects .row div {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Gallery Section */
+.gallery .row div {
+    background-color: #e9ecef;
+    padding: 40px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.9em;
+}
