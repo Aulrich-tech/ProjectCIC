@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #F0F8FF;
+    background-image: url('background.jpg'); /* Add your image file path here */
+    background-size: cover; /* Cover the entire background area */
+    background-position: center center; /* Center the image */
+    background-attachment: fixed; /* Make background stay fixed when scrolling */
 }
 
 /* Header */
