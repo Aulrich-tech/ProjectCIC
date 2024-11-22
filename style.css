@@ -59,13 +59,13 @@ body {
 }
 
 /* Navigation Links */
-.nav {
+.nav-links a {
     text-decoration: none; /* Remove underline by default */
-    color: #fff; /* Default color for links */
+    color: white; /* Default color for links */
     transition: color 0.3s ease;
 }
 
-.nav:hover {
+.nav-links a:hover {
     color: #ff6347; /* Change to tomato color on hover */
 }
 
