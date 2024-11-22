@@ -4,9 +4,26 @@ body {
     min-height: 100vh;
 }
 
+/* General Styling for Main Content */
 main {
-    flex: 1; /* Push the footer to the bottom */
-    color: #fff; /* Ensure main content text is white */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Adjust height as needed */
+    color: white; /* Ensure the text is white */
+}
+
+/* Adjust Photo Styling */
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Text Section */
+main .col-lg-8 {
+    text-align: left; /* Align text to the left */
+    padding-left: 20px; /* Add spacing between photo and text */
 }
 
 .footer {
