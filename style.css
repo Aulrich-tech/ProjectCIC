@@ -17,12 +17,22 @@ body {
 
 /* Navigation Links */
 .nav-links a {
-    margin: 0 10px;
-    color: #007bff;
-    text-decoration: none;
+    text-decoration: none; /* Remove underline by default */
+    color: #007bff; /* Default color for links */
+    transition: color 0.3s ease;
 }
+
 .nav-links a:hover {
-    text-decoration: underline;
+    color: #ff6347; /* Change to tomato color on hover */
+}
+
+/* Change color for Footer Reference */
+footer a {
+    color: #ff6347; /* Set a unique color for links in the footer */
+}
+
+footer a:hover {
+    color: #ffd700; /* Change to gold on hover */
 }
 
 /* About Section */
