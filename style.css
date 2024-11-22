@@ -16,7 +16,7 @@ main {
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #fff;
     background-color: #F0F8FF;
     background-image: url('background.jpg'); /* Add your image file path here */
     background-size: cover; /* Cover the entire background area */
@@ -30,11 +30,11 @@ body {
 }
 
 .header .icon-links a {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
     margin: 0 10px;
     font-size: 1.5em;
     color: #fff;
     transition: color 0.3s;
-    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
 }
 
 .header .icon-links a:hover {
@@ -66,7 +66,7 @@ section {
 
 /* About Section */
 .about .profile-img {
-    background-image: url('your-profile-image.jpg'); /* Replace with your image */
+    background-image: url('myorig.jpg'); /* Replace with your image */
     background-size: cover;
     background-position: center;
 }
