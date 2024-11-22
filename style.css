@@ -118,15 +118,6 @@ a:hover {
     color: #ff6347; /* Change to tomato color on hover */
 }
 
-/* Change color for Footer Reference */
-footer a {
-    color: #ff6347; /* Set a unique color for links in the footer */
-}
-
-footer a:hover {
-    color: #ffd700; /* Change to gold on hover */
-}
-
 /* Apply justified text to list items */
 ul.list-unstyled {
     padding-left: 0; /* Remove default padding */
