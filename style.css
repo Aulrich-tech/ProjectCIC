@@ -1,3 +1,28 @@
+h1 {
+    animation: fadeInDown 2s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
@@ -14,15 +39,20 @@ body {
     position: relative;
 }
 .header .icon-links a {
-    margin: 0 5px;
-    color: #F0F8FF;
-    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5em;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.header .icon-links a:hover {
+    color: #ff6347;
 }
 
 /* Navigation Links */
 .nav-links a {
     text-decoration: none; /* Remove underline by default */
-    color: #007bff; /* Default color for links */
+    color: #fff; /* Default color for links */
     transition: color 0.3s ease;
 }
 
