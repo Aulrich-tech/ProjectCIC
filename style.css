@@ -60,7 +60,30 @@ body {
     color: #ff6347; /* Change to tomato color on hover */
 }
 
-/* Change color for Footer Reference */
+/* About Section */
+.about .profile-img {
+    background-image: url('your-profile-image.jpg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Services Section */
+.services .row div {
+    background-color: #e9ecef;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+
+/* Contact Section */
+.contact p {
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+/* Footer */
+    /* Change color for Footer Reference */
 footer a {
     .footer {
     background-color: rgba(0, 0, 0, 0.9); /* Dark background */
@@ -91,44 +114,6 @@ footer a {
 /* Hover Effect */
 .footer .icon-links a:hover {
     color: #ff6347; /* Tomato color on hover */
-}
-
-/* About Section */
-.about .profile-img {
-    background-image: url('your-profile-image.jpg'); /* Replace with your image */
-    background-size: cover;
-    background-position: center;
-}
-
-/* Services Section */
-.services .row div {
-    background-color: #e9ecef;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-}
-
-/* Projects Section */
-.projects .row div {
-    background-color: #e9ecef;
-    padding: 20px;
-    margin: 10px 0;
-    border-radius: 8px;
-    text-align: center;
-}
-
-/* Contact Section */
-.contact p {
-    font-size: 1.1em;
-    margin: 5px 0;
-}
-
-/* Footer */
-.footer {
-    font-size: 0.9em;
-}
-
-    color: #fff;
 }
 
 /* General Styling for Links */
