@@ -49,15 +49,6 @@ body {
     text-align: center;
 }
 
-/* Gallery Section */
-.gallery .row div {
-    background-color: #e9ecef;
-    padding: 40px;
-    margin: 10px 0;
-    border-radius: 8px;
-    text-align: center;
-}
-
 /* Contact Section */
 .contact p {
     font-size: 1.1em;
