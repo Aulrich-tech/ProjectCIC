@@ -83,19 +83,17 @@ section {
     margin: 5px 0;
 }
 
-/* Footer */
+/* Footer Styling */
 .footer {
     color: #fff; /* White text */
     text-align: center; /* Center-align the content */
     padding: 20px 0; /* Space above and below content */
-    position: relative; /* Default position for alignment adjustments */
-    bottom: 0; /* Ensure footer stays at the bottom */
     width: 100%; /* Full-width footer */
 }
 
-/* Social Media Links Container in Footer */
+/* Social Media Links Container */
 .footer .icon-links {
-    display: flex; /* Display links in a row */
+    display: flex; /* Display icons in a row */
     justify-content: center; /* Center-align the icons */
     gap: 20px; /* Add spacing between icons */
     margin-top: 10px; /* Space between text and icons */
@@ -103,27 +101,18 @@ section {
 
 /* Social Media Icons */
 .footer .icon-links a {
-    font-size: 1.8em; /* Larger icons */
+    font-size: 2em; /* Larger icons */
     color: #fff; /* Default icon color */
     text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
 }
 
-/* Hover Effect for Social Media Icons */
+/* Hover Effect */
 .footer .icon-links a:hover {
-    color: #ff6347; /* Tomato color on hover */
-}
-
-/* General Styling for Links */
-a {
-    text-decoration: none; /* Remove underline by default */
-    color: #fff; /* Default color for links */
-    transition: color 0.3s ease;
-}
-
-a:hover {
     color: #ff6347; /* Change to tomato color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
+
 
 /* Apply justified text to list items */
 ul.list-unstyled {
