@@ -148,3 +148,53 @@ h1 {
         transform: translateY(0);
     }
 }
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    /* Make header text smaller on mobile */
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    /* Adjust padding for mobile */
+    .footer {
+        padding: 10px;
+    }
+
+    /* Stack navigation links vertically */
+    .nav-links {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-links a {
+        margin: 5px 0;
+    }
+
+    /* Adjust images */
+    .about .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Make services section more mobile-friendly */
+    .services .row {
+        display: block;
+        padding: 0;
+    }
+
+    .services .row div {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+/* For very small screens, adjust further */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .footer .icon-links a {
+        font-size: 1.5em; /* Smaller icons on very small screens */
+    }
+}
