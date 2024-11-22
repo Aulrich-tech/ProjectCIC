@@ -82,3 +82,19 @@ footer a {
 footer a:hover {
     color: #ffd700; /* Change to gold on hover */
 }
+
+/* Apply justified text to list items */
+ul.list-unstyled {
+    padding-left: 0; /* Remove default padding */
+}
+
+ul.list-unstyled li {
+    text-align: justify; /* Justify the text within each list item */
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.1em; /* Slightly larger text for better readability */
+}
+
+/* Optional: Bold the labels */
+ul.list-unstyled li strong {
+    font-weight: bold;
+}
