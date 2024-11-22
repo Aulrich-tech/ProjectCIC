@@ -1,28 +1,3 @@
-h1 {
-    animation: fadeInDown 2s;
-}
-
-@keyframes fadeInDown {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.row {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
 /* General Styling */
 body {
     font-family: Arial, sans-serif;
@@ -38,6 +13,7 @@ body {
 .header {
     position: relative;
 }
+
 .header .icon-links a {
     margin: 0 10px;
     font-size: 1.5em;
@@ -60,6 +36,18 @@ body {
     color: #ff6347; /* Change to tomato color on hover */
 }
 
+/* Section Styling */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
 /* About Section */
 .about .profile-img {
     background-image: url('your-profile-image.jpg'); /* Replace with your image */
@@ -75,7 +63,6 @@ body {
     border-radius: 8px;
 }
 
-
 /* Contact Section */
 .contact p {
     font-size: 1.1em;
@@ -83,9 +70,7 @@ body {
 }
 
 /* Footer */
-    /* Change color for Footer Reference */
-footer a {
-    .footer {
+.footer {
     background-color: rgba(0, 0, 0, 0.9); /* Dark background */
     color: #fff; /* White text */
     text-align: center; /* Center-align the content */
@@ -111,7 +96,7 @@ footer a {
     transition: color 0.3s ease; /* Smooth hover effect */
 }
 
-/* Hover Effect */
+/* Hover Effect for Social Media Icons */
 .footer .icon-links a:hover {
     color: #ff6347; /* Tomato color on hover */
 }
@@ -141,4 +126,20 @@ ul.list-unstyled li {
 /* Optional: Bold the labels */
 ul.list-unstyled li strong {
     font-weight: bold;
+}
+
+/* Animation for Header */
+h1 {
+    animation: fadeInDown 2s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
