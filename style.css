@@ -6,6 +6,7 @@ body {
 
 main {
     flex: 1; /* Push the footer to the bottom */
+    color: #fff; /* Ensure main content text is white */
 }
 
 .footer {
