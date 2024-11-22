@@ -62,11 +62,35 @@ body {
 
 /* Change color for Footer Reference */
 footer a {
-    color: #ff6347; /* Set a unique color for links in the footer */
+    .footer {
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background */
+    color: #fff; /* White text */
+    text-align: center; /* Center-align the content */
+    padding: 20px 0; /* Space above and below content */
+    position: relative; /* Default position for alignment adjustments */
+    bottom: 0; /* Ensure footer stays at the bottom */
+    width: 100%; /* Full-width footer */
 }
 
-footer a:hover {
-    color: #ffd700; /* Change to gold on hover */
+/* Social Media Links Container in Footer */
+.footer .icon-links {
+    display: flex; /* Display links in a row */
+    justify-content: center; /* Center-align the icons */
+    gap: 20px; /* Add spacing between icons */
+    margin-top: 10px; /* Space between text and icons */
+}
+
+/* Social Media Icons */
+.footer .icon-links a {
+    font-size: 1.8em; /* Larger icons */
+    color: #fff; /* Default icon color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.footer .icon-links a:hover {
+    color: #ff6347; /* Tomato color on hover */
 }
 
 /* About Section */
