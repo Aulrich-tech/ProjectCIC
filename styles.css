@@ -158,57 +158,6 @@ section h2 {
     color: #ffd700; /* Gold accent for headers */
 }
 
-/* Section-specific Backgrounds (Optional) */
-#about {
-    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
-}
-
-#achievements {
-    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
-}
-
-#education {
-    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
-}
-
-#skills {
-    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
-}
-
-#contact {
-    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
-}
-#gallery {
-    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 30px;
-    border-radius: 15px;
-}
-
-/* Gallery Item Styling */
-#gallery .gallery-item {
-    width: calc(33.33% - 20px); /* Responsive columns */
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-#gallery .gallery-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 10px;
-}
-
-#gallery .gallery-item:hover {
-    transform: scale(1.05); /* Subtle zoom effect */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-}
-
 /* Adjust Text Styling for Better Readability */
 section ul, section p {
     font-size: 1rem;
