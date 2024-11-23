@@ -379,12 +379,12 @@ footer {
 }
 .btn {
     display: inline-block;
-    padding: 1rem 2.8rem;
+    padding: 0.7rem 2rem; /* Reduced padding for smaller size */
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 4rem;
-    font-size: 1.6rem;
+    border-radius: 3rem; /* Slightly less rounded */
+    font-size: 1.4rem; /* Smaller text */
     color: white;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.2rem; /* Slightly less spacing */
     font-weight: 600;
     border: 2px solid rgba(0, 0, 0, 0.5);
     transition: 0.3s ease;
@@ -397,5 +397,5 @@ footer {
     transform: scale3d(1.03);
     background-color: white;
     color: black;
-    box-shadow: 0 0 25px white;
+    box-shadow: 0 0 20px white; /* Reduced glow */
 }
