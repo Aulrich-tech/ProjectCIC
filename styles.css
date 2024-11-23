@@ -210,7 +210,11 @@ footer {
 /* Gallery Section Styling */
 #gallery {
     padding: 50px 20px;
-    background: none; /* Light background color */
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adds a soft border */
 }
 
 #gallery h2 {
