@@ -81,6 +81,7 @@ header nav ul li a:hover {
     background: url('bgbg.jpg') no-repeat center center/cover; /* Specific hero background */
     position: relative;
     display: flex;
+    flex-direction: column; /* Stack content vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
