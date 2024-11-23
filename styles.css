@@ -399,7 +399,7 @@ footer {
     color: black;
     box-shadow: 0 0 20px white; /* Reduced glow */
 }
-.button-container {
+.btn {
     text-align: center; /* Center the button horizontally */
     margin-top: 20px; /* Add space between overlay and button */
 }
