@@ -403,7 +403,3 @@ footer {
     text-align: center; /* Center the button horizontally */
     margin-top: 20px; /* Add space between overlay and button */
 }
-
-.fullscreen .btn {
-    display: inline-block;
-}
