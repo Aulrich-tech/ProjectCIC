@@ -261,5 +261,75 @@ footer {
 #audio-player::-webkit-media-controls-progress-bar {
     background-color: #ff6347; /* Tomato progress bar */
 }
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    /* Stack navigation items vertically on small screens */
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
 
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    /* Adjust hero section font size for smaller screens */
+    .fullscreen h1 {
+        font-size: 2.5rem;
+    }
+
+    .fullscreen p {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust profile picture size */
+    #about img {
+        width: 120px;
+    }
+
+    /* Stack sections vertically on smaller screens */
+    .container {
+        width: 100%;
+    }
+
+    #about, #achievements, #education, #skills, #contact {
+        padding: 20px 0;
+    }
+
+    /* Adjust font size of list items */
+    #about ul li, #achievements ul li, #education ul li, #skills ul li {
+        font-size: 1rem;
+    }
+
+    /* Adjust footer for small screens */
+    footer {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjust hero section font size even further */
+    .fullscreen h1 {
+        font-size: 2rem;
+    }
+
+    .fullscreen p {
+        font-size: 1rem;
+    }
+
+    /* Make everything even smaller for mobile screens */
+    #about img {
+        width: 100px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    /* Adjust font size of all list items */
+    #about ul li, #achievements ul li, #education ul li, #skills ul li {
+        font-size: 0.9rem;
+    }
+}
 
