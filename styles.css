@@ -208,3 +208,16 @@ footer {
 .gallery-item:hover img {
     transform: scale(1.1); /* Slight zoom on hover */
 }
+/* Music Control Style */
+#music-control {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#background-audio {
+    width: 200px; /* Adjust the size of the audio control bar */
+    outline: none;
+}
+
