@@ -137,10 +137,75 @@ h2 {
     text-align: center;
     padding: 10px;
 }
-
+/* Generic Section Block Styling */
 section {
-    padding: 50px 20px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adds a soft border */
 }
+
+/* Section Headers Styling */
+section h2 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffd700; /* Gold accent for headers */
+}
+
+/* Section-specific Backgrounds (Optional) */
+#about {
+    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
+}
+
+#achievements {
+    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
+}
+
+#education {
+    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
+}
+
+#skills {
+    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
+}
+
+#contact {
+    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
+}
+#gallery {
+    background: rgba(0, 0, 139, 0.7); /* Dark Blue */
+}
+
+/* Adjust Text Styling for Better Readability */
+section ul, section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Adjust Links */
+a {
+    color: #ffd700; /* Gold links */
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #ffa500; /* Orange on hover */
+}
+
+/* Optional - Add Subtle Animation on Hover for Sections */
+section:hover {
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+}
+
+
 
 footer {
     background: #000;
@@ -332,4 +397,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
