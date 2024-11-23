@@ -395,6 +395,6 @@ footer {
 }
 
 .btn:hover {
-    background: rgba(0, 0, 0, 0.5); /* Slightly darker cyan on hover */
-    color: #fff; /* Change text color on hover */
+    background: white; /* Slightly darker cyan on hover */
+    color: red; /* Change text color on hover */
 }
