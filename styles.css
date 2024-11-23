@@ -377,3 +377,25 @@ footer {
         font-size: 0.9rem;
     }
 }
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+}
+
+.btn:hover {
+    transform: scale3d(1.03);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+}
