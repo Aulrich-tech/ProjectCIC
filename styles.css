@@ -276,7 +276,7 @@ footer {
     width: 120px; /* Slightly wider player */
     background-color: transparent; /* Remove background */
     border: none; /* Remove default border */
-    color: white; /* White controls */
+    color: transparent; /* White controls */
 }
 
 /* Style the audio control buttons (Play, Pause, Volume, etc.) */
