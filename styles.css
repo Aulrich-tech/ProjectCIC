@@ -384,8 +384,8 @@ footer {
 
 .btn {
     display: inline-block;
-    background: cyan; /* Button background color */
-    color: #000; /* Text color */
+    background: rgba(0, 0, 0, 0.5); /* Button background color */
+    color: #fff; /* Text color */
     padding: 0.7rem 2rem; /* Padding for the button */
     text-decoration: none; /* Remove underline from the link */
     font-weight: bold;
@@ -394,6 +394,6 @@ footer {
 }
 
 .btn:hover {
-    background: #00bfff; /* Slightly darker cyan on hover */
+    background: rgba(0, 0, 0, 0.5); 
     color: #fff; /* Change text color on hover */
 }
