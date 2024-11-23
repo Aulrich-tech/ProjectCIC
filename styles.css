@@ -208,7 +208,6 @@ section h2 {
     transform: scale(1.05); /* Subtle zoom effect */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
 }
-}
 
 /* Adjust Text Styling for Better Readability */
 section ul, section p {
