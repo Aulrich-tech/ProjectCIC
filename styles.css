@@ -391,6 +391,8 @@ footer {
     cursor: pointer;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
     backdrop-filter: blur(5px); /* Adds a background blur effect */
+    text-align: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add space between overlay and button */
 }
 
 .btn:hover {
@@ -398,8 +400,4 @@ footer {
     background-color: white;
     color: black;
     box-shadow: 0 0 20px white; /* Reduced glow */
-}
-.btn {
-    text-align: center; /* Center the button horizontally */
-    margin-top: 20px; /* Add space between overlay and button */
 }
