@@ -208,16 +208,58 @@ footer {
 .gallery-item:hover img {
     transform: scale(1.1); /* Slight zoom on hover */
 }
-/* Music Control Style */
-#music-control {
+/* Style the music control button */
+.music-control {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
+    bottom: 20px; /* Adjust the bottom position */
+    right: 20px;  /* Adjust the right position */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with some transparency */
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    z-index: 9999; /* Ensure it's above other elements */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-#background-audio {
-    width: 200px; /* Adjust the size of the audio control bar */
-    outline: none;
+/* Hover effect for the music control button */
+#music-control:hover {
+    background-color: rgba(0, 0, 0, 1); /* Darken when hovered */
 }
+
+/* Style the audio player */
+#audio-player {
+    width: 120px; /* Slightly wider player */
+    background-color: transparent; /* Remove background */
+    border: none; /* Remove default border */
+    color: white; /* White controls */
+}
+
+/* Style the audio control buttons (Play, Pause, Volume, etc.) */
+#audio-player::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the controls */
+    border-radius: 10px; /* Rounded corners for the player */
+}
+
+#audio-player::-webkit-media-controls-play-button {
+    background-color: #ff6347; /* Tomato color for the play button */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+#audio-player::-webkit-media-controls-play-button:hover {
+    background-color: #ff4500; /* Darker red when hovered */
+}
+
+/* Style the volume control */
+#audio-player::-webkit-media-controls-volume-slider {
+    background-color: #ccc; /* Lighter volume slider */
+}
+
+/* Style the progress bar */
+#audio-player::-webkit-media-controls-progress-bar {
+    background-color: #ff6347; /* Tomato progress bar */
+}
+
 
