@@ -379,7 +379,7 @@ footer {
     }
 }
 .link-container {
-    margin-top: 20px; /* Add some space between the overlay and button */
+    margin-top: 10px; /* Add some space between the overlay and button */
     z-index: 1;
 }
 
