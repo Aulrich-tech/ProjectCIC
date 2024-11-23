@@ -209,7 +209,7 @@ footer {
     transform: scale(1.1); /* Slight zoom on hover */
 }
 /* Style the music control button */
-.music-control {
+#music-control {
     position: fixed;
     bottom: 20px; /* Adjust the bottom position */
     right: 20px;  /* Adjust the right position */
