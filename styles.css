@@ -274,9 +274,9 @@ footer {
 /* Style the audio player */
 #audio-player {
     width: 120px; /* Slightly wider player */
-    background-color: transparent; /* Remove background */
+    background-color: rgba(0, 0, 0, 0.5); /* Remove background */
     border: none; /* Remove default border */
-    color: transparent; /* White controls */
+    color: rgba(0, 0, 0, 0.5); /* White controls */
 }
 
 /* Style the audio control buttons (Play, Pause, Volume, etc.) */
