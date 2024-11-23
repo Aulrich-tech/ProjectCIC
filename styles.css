@@ -377,27 +377,25 @@ footer {
         font-size: 0.9rem;
     }
 }
+.link-container {
+    text-align: center; /* Center the link below the section */
+    margin: 20px 0; /* Add some space above and below the link */
+}
+
 .btn {
     display: inline-block;
-    padding: 0.7rem 2rem; /* Reduced padding for smaller size */
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 3rem; /* Slightly less rounded */
-    font-size: 1.4rem; /* Smaller text */
-    color: white;
-    letter-spacing: 0.2rem; /* Slightly less spacing */
-    font-weight: 600;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    transition: 0.3s ease;
-    cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
-    backdrop-filter: blur(5px); /* Adds a background blur effect */
-    text-align: center; /* Center the button horizontally */
-    margin-top: 20px; /* Add space between overlay and button */
+    background: cyan; /* Button background color */
+    color: #000; /* Text color */
+    padding: 0.7rem 2rem; /* Padding for the button */
+    text-decoration: none; /* Remove underline from the link */
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
 }
 
 .btn:hover {
-    transform: scale3d(1.03);
-    background-color: white;
-    color: black;
-    box-shadow: 0 0 20px white; /* Reduced glow */
+    background: #00bfff; /* Slightly darker cyan on hover */
+    color: #fff; /* Change text color on hover */
+}
+
 }
