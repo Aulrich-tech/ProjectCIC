@@ -118,26 +118,6 @@ h2 {
     margin: 20px 0;
 }
 
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    padding: 20px;
-}
-
-.gallery-item {
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-    border-radius: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
 /* Generic Section Block Styling */
 section {
     margin: 20px 0;
