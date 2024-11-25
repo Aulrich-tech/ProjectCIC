@@ -10,9 +10,6 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     color: #fff;
-    background: linear-gradient(90deg, #ffd700, #ff8c00, #000, #333); /* Gold, Orange, Black tones */
-    background-size: 300% 300%; /* Allow the gradient to move */
-    animation: gradient-animation 10s ease infinite; /* Smooth infinite animation */
     margin: 0;
 }
 .video-background {
