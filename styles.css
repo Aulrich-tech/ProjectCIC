@@ -222,7 +222,7 @@ footer {
     margin-top: 20px;
 }
 
-.social-icon {
+footer .social-media .social-icon {
     font-size: 1.5rem;
     color: #fff;
     transition: color 0.3s ease, transform 0.3s ease;
