@@ -222,13 +222,13 @@ footer {
     margin-top: 20px;
 }
 
-footer #social-media #social-icon {
+footer #social-media .social-icon {
     font-size: 1.5rem;
     color: #fff;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-footer #social-media #social-icon:hover {
+footer #social-media .social-icon:hover {
     color: #ff6347 !important; /* Tomato color on hover */
     transform: scale(1.2) !important; /* Slightly enlarge icon on hover */
 }
