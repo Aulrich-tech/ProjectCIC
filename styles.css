@@ -1,4 +1,5 @@
-/* General Reset */
+/* styles.css */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,15 +15,13 @@ body {
     animation: gradient-animation 10s ease infinite; /* Smooth infinite animation */
     margin: 0;
 }
-
-/* Video Background */
 .video-background {
-    position: fixed;
+    position: fixed; /* Fix the video to the screen */
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -1; /* Keeps the video in the background */
     overflow: hidden;
 }
 
@@ -33,20 +32,31 @@ body {
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; /* Ensures the video fills the screen without distortion */
 }
-
 .video-overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 0;
+    background: rgba(0, 0, 0, 0.5); /* Dark semi-transparent overlay */
+    z-index: 0; /* Ensure overlay is below content */
 }
 
-/* Content Container */
+#bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1; /* Ensure the video stays in the background */
+    object-fit: cover; /* Prevents stretching or distortion */
+    background-color: #000; /* Fallback color while video loads */
+}
 .content {
     position: relative;
     z-index: 1;
@@ -54,13 +64,28 @@ body {
     color: white;
 }
 
+
 .container {
     width: 80%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 0 auto; /* Centers the content */
+}
+/* Profile Picture Styles */
+.profile-container {
+    display: flex;
+    align-items: center; /* Align text and image vertically */
+    gap: 20px; /* Space between the image and the text */
 }
 
-/* Header */
+.profile-img {
+    width: 150px; /* Size of the profile picture */
+    height: 150px; /* Make sure the image is square */
+    border-radius: 50%; /* This will make the image circular */
+    object-fit: cover; /* Ensures the image covers the container without distortion */
+    border: 3px solid #fff; /* Optional: Add a white border around the image */
+}
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -98,13 +123,12 @@ header nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section */
 .fullscreen {
-    height: 100vh;
-    background: url('bgbg.jpg') no-repeat center center/cover;
+    height: 100vh; /* Full viewport height */
+    background: url('bgbg.jpg') no-repeat center center/cover; /* Specific hero background */
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Stack content vertically */
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -118,19 +142,19 @@ header nav ul li a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Overlay for text readability */
     z-index: 1;
 }
 
 .fullscreen .overlay {
     position: relative;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Text and content above overlay */
+    background: rgba(0, 0, 0, 0.3); /* Optional: transparent background for text */
     padding: 20px;
     border-radius: 10px;
 }
 
-/* Text Styling */
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
@@ -141,114 +165,52 @@ h2 {
     margin: 20px 0;
 }
 
-/* Section Styles */
+/* Generic Section Block Styling */
 section {
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adds a soft border */
 }
 
+/* Section Headers Styling */
 section h2 {
     margin-bottom: 15px;
     font-size: 1.8rem;
     text-transform: uppercase;
     text-align: center;
-    color: #ffd700;
+    color: #ffd700; /* Gold accent for headers */
 }
 
+/* Adjust Text Styling for Better Readability */
 section ul, section p {
     font-size: 1rem;
     line-height: 1.5;
 }
 
+/* Adjust Links */
 a {
-    color: #ffd700;
+    color: #ffd700; /* Gold links */
     text-decoration: underline;
 }
 
 a:hover {
-    color: #ffa500;
+    color: #ffa500; /* Orange on hover */
 }
 
+/* Optional - Add Subtle Animation on Hover for Sections */
 section:hover {
     transform: translateY(-5px);
     transition: all 0.3s ease-in-out;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
 }
 
-/* Profile Picture */
-.profile-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
 
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #fff;
-}
 
-/* Gallery */
-#gallery {
-    padding: 50px 20px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(5px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-#gallery h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.8rem;
-    color: #ffd700;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 10px;
-    padding: 20px;
-}
-
-.gallery-item {
-    max-height: 400px;
-    object-fit: contain;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 5px;
-}
-
-.gallery-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Achievements Section */
-#achievements .card {
-    border: none;
-    background-color: rgba(0, 0, 0, 0.4);
-    color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-/* Footer */
 footer {
     background: black;
     color: #fff;
@@ -270,35 +232,116 @@ footer {
 }
 
 .social-icon:hover {
-    color: #ff6347;
-    transform: scale(1.2);
+    color: #ff6347; /* Tomato color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
+}
+/* Gallery Section Styling */
+#gallery {
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent black */
+    color: #fff; /* White text for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Slight shadow */
+    backdrop-filter: blur(5px); /* Adds a background blur effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Adds a soft border */
 }
 
-/* Music Control Button */
+#gallery h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #ffd700;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Smaller columns */
+    gap: 10px; /* Smaller gaps between items */
+    padding: 20px;
+}
+
+.gallery-item {
+  max-height: 400px; /* Set a max height for the images */
+  object-fit: contain; /* Ensures the images are cropped properly to fill the space */
+  width: 100%; /* Ensure the images fill their container's width */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+  display: flex;
+}
+.carousel-inner {
+  text-align: center; /* Center images inside the carousel */
+}
+
+.gallery-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Ensure the images scale proportionally */
+    border-radius: 5px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+/* Style the music control button */
 #music-control {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    bottom: 20px; /* Adjust the bottom position */
+    right: 20px;  /* Adjust the right position */
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background with some transparency */
     border-radius: 50%;
     padding: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    z-index: 9999; /* Ensure it's above other elements */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Hover effect for the music control button */
+#music-control:hover {
+    background-color: rgba(0, 0, 0, 1); /* Darken when hovered */
+}
+
+/* Style the audio player */
+#audio-player {
+    width: 120px; /* Slightly wider player */
+    background-color: rgba(0, 0, 0, 0.5); /* Remove background */
+    border: none; /* Remove default border */
+    color: rgba(0, 0, 0, 0.5); /* White controls */
+}
+
+/* Style the audio control buttons (Play, Pause, Volume, etc.) */
+#audio-player::-webkit-media-controls-panel {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark background for the controls */
+    border-radius: 10px; /* Rounded corners for the player */
+}
+
+#audio-player::-webkit-media-controls-play-button {
+    background-color: #ff6347; /* Tomato color for the play button */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
     transition: background-color 0.3s ease;
 }
 
-#music-control:hover {
-    background-color: rgba(0, 0, 0, 1);
+#audio-player::-webkit-media-controls-play-button:hover {
+    background-color: #ff4500; /* Darker red when hovered */
 }
 
-#audio-player {
-    width: 120px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
+/* Style the volume control */
+#audio-player::-webkit-media-controls-volume-slider {
+    background-color: #ccc; /* Lighter volume slider */
 }
 
-/* Media Queries */
+/* Style the progress bar */
+#audio-player::-webkit-media-controls-progress-bar {
+    background-color: #ff6347; /* Tomato progress bar */
+}
+/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
+    /* Stack navigation items vertically on small screens */
     header nav ul {
         display: block;
         text-align: center;
@@ -309,6 +352,7 @@ footer {
         margin: 10px 0;
     }
 
+    /* Adjust hero section font size for smaller screens */
     .fullscreen h1 {
         font-size: 2.5rem;
     }
@@ -317,20 +361,33 @@ footer {
         font-size: 1.2rem;
     }
 
+    /* Adjust profile picture size */
     #about img {
         width: 120px;
     }
 
+    /* Stack sections vertically on smaller screens */
     .container {
         width: 100%;
     }
 
+    #about, #achievements, #education, #skills, #contact {
+        padding: 20px 0;
+    }
+
+    /* Adjust font size of list items */
+    #about ul li, #achievements ul li, #education ul li, #skills ul li {
+        font-size: 1rem;
+    }
+
+    /* Adjust footer for small screens */
     footer {
         font-size: 0.9rem;
     }
 }
 
 @media (max-width: 480px) {
+    /* Adjust hero section font size even further */
     .fullscreen h1 {
         font-size: 2rem;
     }
@@ -339,6 +396,7 @@ footer {
         font-size: 1rem;
     }
 
+    /* Make everything even smaller for mobile screens */
     #about img {
         width: 100px;
     }
@@ -347,8 +405,16 @@ footer {
         padding: 15px;
     }
 
-    #about ul li {
+    /* Adjust font size of all list items */
+    #about ul li, #achievements ul li, #education ul li, #skills ul li {
         font-size: 0.9rem;
+    }
+}
+.link-container {
+    margin-top: 10px; /* Add some space between the overlay and button */
+    z-index: 1;
+}
+
 .btn {
     display: inline-block;
     background: rgba(0, 0, 0, 0.5); /* Button background color */
@@ -359,8 +425,14 @@ footer {
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth hover effect */
 }
+
 .btn:hover {
     background: white; /* Slightly darker cyan on hover */
     color: red; /* Change text color on hover */
 }
-
+#achievements .card {
+    border: none; /* Remove card border */
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
