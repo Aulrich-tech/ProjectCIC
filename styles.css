@@ -228,9 +228,9 @@ footer {
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-footer .social-media .social-icon:hover {
-    color: #ff6347 !important; /* Tomato color on hover */
-    transform: scale(1.2) !important; /* Slightly enlarge icon on hover */
+.social-icon:hover {
+    color: #ff6347; /* Tomato color on hover */
+    transform: scale(1.2); /* Slightly enlarge icon on hover */
 }
 /* Gallery Section Styling */
 #gallery {
