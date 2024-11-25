@@ -4,143 +4,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aulrich Espiritu - Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <!-- Add Font Awesome for social media icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Simple Music Player -->
-<div id="music-control">
-    <audio controls id="background-audio" loop>
-        <source src="apt.mp3" type="audio/mpeg">
-    </audio>
-</div>
+    <!-- Music Player -->
+    <div id="music-control">
+        <audio controls id="background-audio" loop>
+            <source src="apt.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <div class="video-background">
+        <video autoplay loop muted loop id="bg-video">
+            <source src="motionbackground.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-overlay"></div>
 
-    <header>
-        <div class="container">
-            <h1 class="logo">Aulrich J. Espiritu</h1>
+    <!-- Header -->
+    <header class="bg-dark text-light py-3 shadow">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="logo mb-0">Aulrich J. Espiritu</h1>
             <nav>
-                <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#achievements">Achievements</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#gallery">My Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#about" class="nav-link text-light">About</a></li>
+                    <li class="nav-item"><a href="#achievements" class="nav-link text-light">Achievements</a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link text-light">Education</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link text-light">Skills</a></li>
+                    <li class="nav-item"><a href="#gallery" class="nav-link text-light">Gallery</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link text-light">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Fullscreen Section (Hero Image) -->
-    <section class="fullscreen">
-        <div class="overlay">
+    <!-- Fullscreen Section -->
+    <section class="fullscreen d-flex flex-column justify-content-center align-items-center text-center text-light">
+        <div class="overlay bg-dark bg-opacity-50 p-5 rounded">
             <h1>Aulrich J. Espiritu</h1>
             <p>Information Technology Student & Aspiring Web Developer</p>
         </div>
         <div class="link-container">
             <a href="https://open.spotify.com/track/3SfbB0Y3saMIQnNctxMVhj?si=97b48a4a103a4cda" target="_blank" class="btn">Click me!</a>
         </div>
-
     </section>
 
     <!-- About Section -->
-<section id="about">
-    <div class="container">
-        <h2>About Me</h2>
-        <div class="profile-container">
-            <img src="myorig.jpg" alt="Aulrich J. Espiritu" class="profile-img"> <!-- Profile picture -->
-            <p>I am an Information Technology student with a background in accountancy, exploring web development and digital innovation.</p>
-            <ul>
-                <li><strong>Skills:</strong> Adaptable, experienced in web development, creating wireframes, and assembling PCs.</li>
-                <li><strong>Interests:</strong> Learning, playing video games, and playing music (especially guitar).</li>
-            </ul>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="myorig.jpg" alt="Aulrich J. Espiritu" class="profile-img img-fluid rounded-circle shadow">
+                </div>
+                <div class="col-md-8">
+                    <p>I am an Information Technology student with a background in accountancy, exploring web development and digital innovation.</p>
+                    <ul>
+                        <li><strong>Skills:</strong> Adaptable, experienced in web development, creating wireframes, and assembling PCs.</li>
+                        <li><strong>Interests:</strong> Learning, playing video games, and playing music (especially guitar).</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Achievements Section -->
-    <section id="achievements">
+    <section id="achievements" class="py-5">
         <div class="container">
-            <h2>Achievements</h2>
-            <ul>
-                <li>Consistent Honors (2017-2023) - Recognized for academic excellence.</li>
-                <li>1st Runner Up - Matalasang Pagtula (2012).</li>
-                <li>Battle of the Bands Grand Champion (2019).</li>
-            </ul>
+            <h2 class="text-center mb-4">Achievements</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Consistent Honors</h5>
+                            <p class="card-text">Recognized for academic excellence (2017-2023).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">1st Runner Up</h5>
+                            <p class="card-text">Matalasang Pagtula (2012).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Battle of the Bands</h5>
+                            <p class="card-text">Grand Champion (2019).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" class="py-5">
         <div class="container">
-            <h2>Education</h2>
-            <ul>
-                <li><strong>Bachelor of Science in Information Technology</strong> - University of the East (Ongoing).</li>
-                <li><strong>Bachelor of Science in Accountancy</strong> - Pamantasan ng Lungsod ng Valenzuela (2023-2024).</li>
-                <li><strong>Senior High School (Accountancy, Business, and Management Strand)</strong> - Our Lady of Fatima University, Graduated with Honors.</li>
-            </ul>
+            <h2 class="text-center mb-4">Education</h2>
+            <div class="accordion" id="educationAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Bachelor of Science in Information Technology
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            University of the East (Ongoing).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Bachelor of Science in Accountancy
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            Pamantasan ng Lungsod ng Valenzuela (2023-2024).
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Senior High School (Accountancy, Business, and Management Strand)
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#educationAccordion">
+                        <div class="accordion-body">
+                            Our Lady of Fatima University, Graduated with Honors.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="py-5">
         <div class="container">
-            <h2>Skills</h2>
-            <ul>
-                <li><strong>Web Development:</strong> HTML, CSS</li>
-                <li><strong>Programming Languages:</strong> Python, CSS, HTML</li>
-                <li><strong>Problem-Solving:</strong> Able to provide solutions to different challenges</li>
-                <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code</li>
-                <li><strong>Flexibility:</strong> Able to adapt to various environments or circumstances</li>
-                <li><strong>Communication</strong> - Fluent in English and Tagalog, able to understand Japanese and Korean.</li>
-                <li><strong>Electrical Wiring</strong> - Have basic knowledge in wiring electricity.</li>
-                <li><strong>Dancing and Singing</strong> - Capable of singing and dancing.</li>
-            </ul>
+            <h2 class="text-center mb-4">Skills</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li><strong>Web Development:</strong> HTML, CSS</li>
+                        <li><strong>Programming Languages:</strong> Python, CSS, HTML</li>
+                        <li><strong>Problem-Solving:</strong> Able to provide solutions to different challenges</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code</li>
+                        <li><strong>Flexibility:</strong> Able to adapt to various environments or circumstances</li>
+                        <li><strong>Communication:</strong> Fluent in English and Tagalog, able to understand Japanese and Korean.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Gallery Section -->
-<section id="gallery">
-    <div class="container">
-        <h2>My Gallery</h2>
-        <div class="gallery">
-            <div class="gallery-item">
-                <img src="wiring.jpg" alt="Image 1">
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Gallery</h2>
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="wiring.jpg" class="d-block mx-auto gallery-item" alt="Gallery Image 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="dancer.jpg" class="d-block mx-auto gallery-item" alt="Gallery Image 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="fam.jpg" class="d-block mx-auto gallery-item" alt="Gallery Image 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="gallery-item">
-                <img src="dancer.jpg" alt="Image 2">
-            </div>
-            <div class="gallery-item">
-                <img src="fam.jpg" alt="Image 3">
-            </div>
-            <!-- Add more images as needed -->
         </div>
-    </div>
-</section>
+    </section>
 
-
+    <!-- Contact Section -->
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Contact</h2>
+            <h2 class="text-center mb-4">Contact</h2>
             <p>Email: <a href="mailto:aulrichespiritu711@gmail.com" style="color: #FFF;">aulrichespiritu711@gmail.com</a></p>
             <p>Phone (Globe): +63 917 271 3252</p>
         </div>
     </section>
 
-    <!-- Footer with Social Media Links -->
-    <footer>
+    <!-- Footer -->
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>&copy; 2024 Aulrich Espiritu</p>
         <div class="social-media">
-            <!-- Social Media Links -->
-            <a href="https://www.facebook.com/share/17pvsQFfCT/" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.facebook.com/share/17pvsQFfCT/" target="_blank" class="social-icon"><i class="fab fa-facebook"></i></a>
             <a href="https://www.instagram.com/aulrich_espiritu/profilecard/?igsh=MWJ1M3pvdnU2MzB4Yg==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
             <a href="https://www.snapchat.com/add/zeb71103?share_id=4lOEP1JFfPI&locale=en-PH" target="_blank" class="social-icon"><i class="fab fa-snapchat"></i></a>
             <a href="https://github.com/Aulrich-tech" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
         </div>
-        <p>&copy; 2024 Aulrich J. Espiritu. All Rights Reserved.</p>
     </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
