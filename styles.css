@@ -351,27 +351,54 @@ a {
 #audio-player::-webkit-media-controls-progress-bar {
     background-color: #ff6347; /* Tomato progress bar */
 }
+/* General Navigation Styling */
+header nav {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    width: 100%; /* Full width */
+    z-index: 100; /* Keep it above other elements */
+    background-color: #333; /* Dark background for visibility */
+    text-align: center; /* Center the content in the navbar */
+}
+
+/* Navigation List Styling */
+header nav ul {
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    flex-wrap: wrap; /* Allow wrapping for narrower screens */
+    padding: 10px 0;
+    margin: 0;
+    list-style: none; /* Remove default bullets */
+}
+
+header nav ul li {
+    font-size: 0.9rem; /* Set font size */
+    padding: 5px 15px; /* Adjust spacing */
+    color: white; /* Set text color */
+    text-align: center; /* Center the text inside list items */
+}
+
+/* Prevent Content Overlap */
+.fullscreen {
+    margin-top: 60px; /* Push content below the fixed navbar */
+}
+
 /* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
     header nav ul {
-        flex-direction: row; /* Horizontal alignment */
-        flex-wrap: wrap; /* Allow wrapping if needed */
-        justify-content: space-evenly; /* Spread items evenly */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        justify-content: center; /* Ensure items stay centered */
         padding: 5px 0; /* Reduce padding for compactness */
     }
 
     header nav ul li {
-        font-size: 0.8rem; /* Reduce font size */
-        padding: 5px; /* Adjust padding for compact items */
+        font-size: 0.8rem; /* Reduce font size for smaller screens */
+        padding: 5px; /* Compact padding for better fit */
     }
 
-    .fullscreen h1 {
-        font-size: 2rem; /* Adjust hero text size */
-        margin-top: 60px; /* Ensure content is pushed down */
-    }
-
-    .fullscreen p {
-        font-size: 1rem; /* Adjust paragraph text size */
+    .fullscreen {
+        margin-top: 60px; /* Ensure content is not overlapped */
     }
 }
 
@@ -379,18 +406,17 @@ a {
 @media (max-width: 480px) {
     header nav ul {
         flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Center align items */
-        padding: 10px 0;
+        justify-content: center; /* Center items */
+        padding: 10px 0; /* Add padding for touch targets */
     }
 
     header nav ul li {
         font-size: 0.8rem; /* Maintain small font size */
-        padding: 5px; /* Compact spacing */
-        text-align: center; /* Center text */
+        padding: 8px 0; /* Add vertical spacing for better readability */
     }
 
     .fullscreen h1 {
-        font-size: 1.8rem; /* Further reduce hero text size */
+        font-size: 1.8rem; /* Adjust hero text size */
     }
 
     .fullscreen p {
@@ -398,9 +424,10 @@ a {
     }
 
     #about img {
-        width: 100px; /* Adjust profile picture size */
+        width: 100px; /* Reduce profile picture size */
     }
 }
+
 
 .link-container {
     margin-top: 10px; /* Add some space between the overlay and button */
