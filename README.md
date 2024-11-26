@@ -21,3 +21,6 @@ Technologies Used
 -Bootstrap 5 (for grid layout and components)
 -Font Awesome (for icons)
 -JavaScript (Bootstrap interactivity)
+
+Domain Link: https://aulrich-tech.github.io/ProjectCIC/
+Repository Link: https://github.com/Aulrich-tech/ProjectCIC.git
