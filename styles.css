@@ -351,93 +351,54 @@ a {
 #audio-player::-webkit-media-controls-progress-bar {
     background-color: #ff6347; /* Tomato progress bar */
 }
-/* Media Queries for Mobile Devices */
+/* Mobile-Specific Adjustments */
 @media (max-width: 768px) {
     header nav ul {
-        display: flex; /* Keep the items in a row */
-        justify-content: space-around; /* Spread items evenly */
-        align-items: center; /* Align items vertically */
-        flex-wrap: nowrap; /* Prevent wrapping */
-        padding: 10px 0; /* Add some breathing room */
-        background-color: #333; /* Optional: Set a background for better visibility */
+        flex-direction: row; /* Horizontal alignment */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+        justify-content: space-evenly; /* Spread items evenly */
+        padding: 5px 0; /* Reduce padding for compactness */
     }
 
     header nav ul li {
-        display: inline-block; /* Ensure items stay inline */
-        margin: 0 5px; /* Slightly reduce spacing */
-        font-size: 0.9rem; /* Adjust font size */
+        font-size: 0.8rem; /* Reduce font size */
+        padding: 5px; /* Adjust padding for compact items */
     }
 
-    header nav {
-        position: fixed; /* Fix the nav bar at the top */
-        top: 0;
-        width: 100%; /* Ensure full width */
-        z-index: 100; /* Keep it above other elements */
-    }
-
-    /* Adjust hero section font size for smaller screens */
     .fullscreen h1 {
-        font-size: 2.5rem;
-        margin-top: 60px; /* Push down content to avoid overlap */
+        font-size: 2rem; /* Adjust hero text size */
+        margin-top: 60px; /* Ensure content is pushed down */
     }
 
     .fullscreen p {
-        font-size: 1.2rem;
-    }
-
-    /* Adjust profile picture size */
-    #about img {
-        width: 120px;
-    }
-
-    /* Stack sections vertically on smaller screens */
-    .container {
-        width: 100%;
-    }
-
-    #about, #achievements, #education, #skills, #contact {
-        padding: 20px 0;
-    }
-
-    /* Adjust font size of list items */
-    #about ul li, #achievements ul li, #education ul li, #skills ul li {
-        font-size: 1rem;
-    }
-
-    /* Adjust footer for small screens */
-    footer {
-        font-size: 0.9rem;
+        font-size: 1rem; /* Adjust paragraph text size */
     }
 }
 
+/* For Extra Small Screens */
 @media (max-width: 480px) {
-    /* Adjust hero section font size further */
+    header nav ul {
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center align items */
+        padding: 10px 0;
+    }
+
+    header nav ul li {
+        font-size: 0.8rem; /* Maintain small font size */
+        padding: 5px; /* Compact spacing */
+        text-align: center; /* Center text */
+    }
+
     .fullscreen h1 {
-        font-size: 2rem;
-        margin-top: 60px; /* Ensure no overlap with navbar */
+        font-size: 1.8rem; /* Further reduce hero text size */
     }
 
     .fullscreen p {
         font-size: 1rem;
     }
 
-    /* Make everything smaller for compact screens */
     #about img {
-        width: 100px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    /* Adjust font size of list items */
-    #about ul li, #achievements ul li, #education ul li, #skills ul li {
-        font-size: 0.9rem;
-    }
-
-    /* Footer adjustments */
-    footer {
-        font-size: 0.8rem;
+        width: 100px; /* Adjust profile picture size */
     }
 }
 
